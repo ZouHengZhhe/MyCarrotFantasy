@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
-
-//抽象类
-public abstract class ReusableObject<T> : MonoBehaviour, IReusable<T>
+﻿//抽象类，不能实例化，但能声明（只能被继承）
+public abstract class ReUsableObject : IReusable
 {
     public abstract void OnSpawn();
 
-    public abstract void UnOnSpawn();
+    public abstract void OnUnSpawn();
 }
